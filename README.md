@@ -17,7 +17,7 @@ PHP 7.4*
 4) Create a DB (koombea) and import the koombea.sql file included into the root folder of this app.
     * Check the DB connection parameters in file config.php.
 6) Go to localhost / koombea.
-7) enjoy it.
+7) Enjoy it.
 
 #### User
 sebasca5@yahoo.com / admin
