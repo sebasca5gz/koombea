@@ -1,0 +1,20 @@
+<form class="needs-validation" data-option="<tmpl_var name='option'>" method="post" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="email">Email*</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="johndoe@email.com" required>
+      <div class="invalid-feedback">
+        Este campo es requerido.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="password">Password*</label>
+      <input type="password" class="form-control" name="password" id="password" required>
+      <div class="invalid-feedback">
+        Este campo es requerido.
+      </div>
+    </div>
+  </div>
+  <a href="<tmpl_var name='backurl'>" class="btn btn-secondary" type="submit">Cancelar</a>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>

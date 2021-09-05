@@ -1,0 +1,19 @@
+
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+  <a class="navbar-brand" href="#">Koombea</a>
+  <div class="" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <tmpl_if name='islogged'>
+      <a href="#" data-option="close" class="nav-link" >Cerrar Session</a>
+      <tmpl_else>
+      <a href="#" data-option="loginform" class="nav-link active" href="#">Login</a>
+      <a href="#" data-option="registerform" class="nav-link" href="#">Registrarse</a>
+      </tmpl_if>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+  <div class="content-page">
+    <tmpl_var name='content'>
+  </div>
+</div>

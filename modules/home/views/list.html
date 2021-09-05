@@ -1,0 +1,31 @@
+<div class="row" date-page="<tmpl_var name='page'>" date-pages="<tmpl_var name='total_pages'>">
+	<tmpl_if name='results'>
+		<div class="col-12">
+			<div class="alert alert-secondary" role="alert">
+				(<tmpl_var name='total_results'>) resultados para <b><tmpl_var name='term'></b>
+			</div>
+		</div>
+		<tmpl_var name='pagination'>
+		<tmpl_loop name='results'>
+		<div class="col-12 col-md-4 mb-5 d-flex align-items-stretch">
+			<div data-movie="<tmpl_var name='id'>" class="card">
+				<div class="card-header"><b><tmpl_var name='title'></b><br><small><tmpl_var name='release_date'></small></div>
+				<img src="<tmpl_var name='poster_path'>" class="card-img-top" alt="<tmpl_var name='title'>" title="<tmpl_var name='title'>">
+				<div class="card-body">
+				    <p class="card-text"><tmpl_var name='overview'></p>
+				</div>
+				  <div class="card-footer">
+				    Ranking: <tmpl_var name='vote_average'>/<tmpl_var name='vote_count'> Votos
+				  </div>
+			</div>
+		</div>
+		</tmpl_loop>
+		<tmpl_var name='pagination'>
+	<tmpl_else>
+		<div class="col-12">
+			<div class="alert alert-danger" role="alert">
+				No se encontraron resultados para <b><tmpl_var name='term'></b>
+			</div>
+		</div>
+	</tmpl_if>
+</div>

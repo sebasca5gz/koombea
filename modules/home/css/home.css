@@ -1,0 +1,7 @@
+.loading {
+    opacity: 0.5;
+    pointer-events: none;
+    background-image: url('./images/loading.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+}
